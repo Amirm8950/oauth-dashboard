@@ -1,8 +1,8 @@
-/* ------------------------------------------------------------------
-   Global auth state (Zustand) │ Coder: Amir Mehdi Memari
-   ------------------------------------------------------------------ */
+/* --------------------------------------------------------------
+   Global auth state (Zustand) │ Amir
+----------------------------------------------------------------- */
 import { create } from 'zustand';
-import { User }   from 'firebase/auth';
+import type { User } from 'firebase/auth';   // ← type-only import
 
 interface AuthState {
   user: User | null;
