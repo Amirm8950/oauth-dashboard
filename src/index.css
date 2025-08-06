@@ -1,10 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* ───────── reusable buttons ───────── */
 .btn-primary {
-  @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition;
+  @apply px-4 py-2 bg-brand-500 text-white rounded-lg hover:bg-brand-600 transition;
 }
 .btn-secondary {
-  @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition;
+  @apply px-4 py-2 bg-gray-200 text-brand-700 rounded-lg hover:bg-gray-300 transition;
+}
+
+/* ───────── layout helpers ───────── */
+body {
+  @apply bg-gradient-to-br from-brand-50 to-brand-100 min-h-screen text-gray-800;
+  font-family: Inter, sans-serif;
+}
+.container {
+  @apply max-w-screen-md mx-auto px-4;
 }
