@@ -1,0 +1,8 @@
+# Node & Vite artifacts
+node_modules/
+dist/
+.env          # keep secrets out of Git
+# IDE/editor junk
+.vscode/
+.idea/
+.DS_Store
